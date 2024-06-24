@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Settings Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftbox">
+        <nav>
+          <a onclick="tabs(0)" class="tab active">
+            <i class="fa fa-user"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="rightbox">
+        <div class="profile tabShow">
+          <h1>Personal Info</h1>
+          <form id="personalInfoForm">
+            <label for="id">Profile ID</label>
+            <input type="text" class="input" id="id" readonly />
+
+            <label for="name">Full Name</label>
+            <input type="text" class="input" id="name" />
+
+            <label for="birthday">Birthday</label>
+            <input type="text" class="input" id="birthday" />
+
+            <label for="gender">Gender</label>
+            <input type="text" class="input" id="gender" />
+
+            <label for="email">Email Address</label>
+            <input type="text" class="input" id="email" />
+
+            <label for="password">Password</label>
+            <input type="password" class="input" id="password" />
+
+            <button type="button" onclick="updateProfile()" class="btn">
+              Update
+            </button>
+          </form>
+          <img id="image" alt="Profile Image" />
+        </div>
+      </div>
+    </div>
+    <button onclick="signOut()" class="sign-out-btn">Sign Out</button>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>

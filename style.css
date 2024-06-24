@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+body {
+  background: linear-gradient(to right, #2ed573, #f9ca24);
+  overflow-x: hidden;
+}
+
+.container {
+  background: #fff;
+  width: 540px;
+  height: auto;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 199, 0.5);
+}
+
+.leftbox {
+  float: left;
+  top: -5%;
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  background: #2ed573;
+  box-shadow: 3px 3px 10px rgba(119, 119, 199, 0.5);
+  border: 1px solid #fff;
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: #fff;
+  font-size: 1em;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #10ac84;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+nav a.active {
+  color: #10ac84;
+}
+
+.rightbox {
+  width: 75%;
+  margin-left: 15%;
+  padding: 20px;
+}
+
+.tab {
+  transition: all 0.5s ease-in;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #7ed386;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.input {
+  border: 0;
+  border-bottom: 1px solid #3fb6a8;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 7px 0;
+  color: #070707;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+span {
+  font-size: 0.7em;
+  color: #777;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: 0;
+  color: #fff;
+  background: #7ed386;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+}
+
+.sign-out-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.image-container {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 20px; /* Adjust spacing */
+  margin-left: auto; /* Adjust positioning */
+  margin-right: auto; /* Adjust positioning */
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.rightbox {
+  position: relative; /* Ensure the container is relatively positioned */
+}
+
+.profile {
+  position: relative; /* Ensure the profile section is relatively positioned */
+}
+
+#image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100px; /* Adjust width as needed */
+  max-height: 100px; /* Adjust height as needed */
+}

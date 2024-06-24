@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>demo</h1>
+    </header>
+    <div class="login-container">
+      <div class="wrapper">
+        <div id="formContent">
+          <h2 class="inactive underlineHover">
+            <a href="login.html">Sign In</a>
+          </h2>
+          <h2 class="active">Sign Up</h2>
+          <br />
+          <h2>Create Your Account</h2>
+          <br />
+          <form class="login-form">
+            <input
+              type="text"
+              id="username"
+              class="fadeIn second"
+              name="username"
+              placeholder="Enter Username"
+              required
+            />
+            <input
+              type="text"
+              id="fullName"
+              class="fadeIn second"
+              name="fullName"
+              placeholder="Enter Full Name"
+              required
+            />
+            <input
+              type="text"
+              id="contactNumber"
+              class="fadeIn second"
+              name="contactNumber"
+              placeholder="Enter Contact Number"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              class="fadeIn third"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="password"
+              id="confirmPassword"
+              class="fadeIn third"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+            <input type="submit" class="fadeIn fourth" value="Sign Up" />
+          </form>
+          <button onclick="signIn()" class="fadeIn fourth google-signin-button">
+            Sign In With Google
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>&copy; demo.</footer>
+  </body>
+</html>

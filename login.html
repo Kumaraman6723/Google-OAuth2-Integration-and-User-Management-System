@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>demo</h1>
+    </header>
+    <div class="login-container">
+      <div class="wrapper">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active">Sign In</h2>
+          <h2 class="inactive underlineHover">
+            <a href="signup.html">Sign Up</a>
+          </h2>
+          <br />
+          <h2>Login</h2>
+          <!-- Icon -->
+          <br />
+          <!-- Login Form -->
+          <form class="login-form" id="loginForm">
+            <input
+              type="text"
+              id="UserId"
+              class="fadeIn second"
+              name="UserId"
+              placeholder="Enter User Name"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              class="fadeIn third"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+            <input type="submit" class="fadeIn fourth" value="Log In" />
+          </form>
+          <!-- OTP Form -->
+
+          <button onclick="signIn()" class="fadeIn fourth google-signin-button">
+            Sign In With Google
+          </button>
+
+          <!-- Sign In With Google Button -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <footer>&copy; demo</footer>
+  </body>
+</html>
